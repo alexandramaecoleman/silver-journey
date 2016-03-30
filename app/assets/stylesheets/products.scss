@@ -1,3 +1,29 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	text-transform: uppercase;
+	padding-bottom: 50px;
+}
+
+h1, h2 {
+	font-family: helvetica;
+	letter-spacing: 2px;
+	text-align:center;
+}
+
+body {
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+  font: 100% Helvetica, sans-serif;
+}
+
+table {
+	width:100%;
+}
+
+table th {
+		letter-spacing: 4px;
+}
