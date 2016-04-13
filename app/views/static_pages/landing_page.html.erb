@@ -9,13 +9,12 @@
 
 <ol class="carousel-indicators">
 <% @products.each_with_index do |item, index| %>
-<% if index == 0 %>
-<li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="active"></li>
-
-<% else %>
-<li data-target="#carousel-example-generic" data-slide-to="<%= index %>"></li>
-<% end %>
-<% end %>
+	<% if index == 0 %>
+		<li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="active"></li>
+		<% else %>
+		<li data-target="#carousel-example-generic" data-slide-to="<%= index %>"></li>
+	<% end %>
+	<% end %>
 </ol>
 
   <!-- Wrapper for slides -->
@@ -23,7 +22,7 @@
   <div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
 		<div class="item<%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
+		<%= link_to(image_tag(product.image_url),"products/"+product.id.to_s) %>
       <div class="carousel-caption">
         <%= product.name %>
       </div>
