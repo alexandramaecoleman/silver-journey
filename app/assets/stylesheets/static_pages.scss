@@ -25,10 +25,21 @@ p {
 .navbar {
 	background-color: #D3D3D3;
 	border-bottom: #000 2px solid;
+  padding-top: 2px;
 }
 
 .navbar a {
 	color: #000;
+}
+
+.navbar-right {
+  margin-right:5px;
+}
+
+.navbar-form {
+  margin-top:12px;
+  margin-bottom:0;
+  font-family: helvetica;
 }
 
 .navbar button {
