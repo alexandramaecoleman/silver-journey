@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 end
 
-# thank you
 def thank_you
   @name = params[:name]
   @email = params[:email]
@@ -21,3 +20,4 @@ def thank_you
   @message = params[:message]
   UserMailer.contact_form(@email, @name, @message).deliver_now
 end
+
