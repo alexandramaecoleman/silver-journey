@@ -1,3 +1,5 @@
+before_filter :authenticate_user!
+
 class OrdersController < ApplicationController
 
   def index
