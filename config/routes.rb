@@ -16,6 +16,10 @@ Rails.application.routes.draw do
 # added in 'create routes for orders - part of the controller lesson'
 resources :orders, only: [:index, :show, :create, :destroy]
 
+
+# thank you page
+post 'static_pages/thank_you'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
