@@ -1,17 +1,8 @@
 class StaticPagesController < ApplicationController
-  def index
-  end
-end
-
-# new method called landing page
-
-class StaticPagesController < ApplicationController
 
   def landing_page
     @products = Product.all
   end
-
-end
 
 # thank you
 def thank_you
@@ -22,4 +13,5 @@ def thank_you
       :to => 'alexandramaecoleman@gmail.com',
       :subject => "A new contact form message from #{@name}",
       :body => @message).deliver_now
+  end
 end
